@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>annie lin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <!-- <td id="logo">annie lin</td> -->
+                <td id="navigation">
+                    <a href="#bio">about</a>
+                    <a href="#work">projects</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h2><i>Hello world!</i></h2>
+                <h1>My name is Annie. <br>
+                I'm a programmer, designer, and storyteller.</h1>
+                <h2>Let's be friends:</h2>
+                <table>
+                    <tr>
+                        <!-- <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-envelope"></i></a></td> -->
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-linkedin"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-github"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="bio">
+        <h1>about</h1>
+        <p>Hi, I'm Annie! I'm a first-generation undergraduate student in my third year at UC Berkeley studying Applied Mathematics with an emphasis in Computer Science.
+        </p>
+        <p>
+        Growing up, I found joy in pursuing visually creative projects, but I've never considered doing it professionally. Now, I'm reconsidering what defines artistry and want to explore it through technology.
+        </p>
+        <p>
+        My current interests include computer graphics, animation, game development, digital design, and software engineering!
+        </p>
+    </div>
+    <div id="work">
+        <h1>work</h1>
+        <div id="photos">
+            <a href="https://cal-cs184-student.github.io/proj-webpage-photoreceptor/proj1/index.html"><img src="https://cs184.eecs.berkeley.edu/cs184_sp16_content/article_images/3_1.jpg"></a>
+            <a href="https://cal-cs184-student.github.io/proj-webpage-photoreceptor/proj2/index.html"><img src="http://cs184.eecs.berkeley.edu/cs184_sp17_content/article_images/9_2.jpg"></a>
+            <a href="https://cal-cs184-student.github.io/proj-webpage-photoreceptor/proj3-1/index.html"><img src="https://cs184.eecs.berkeley.edu/sp21/docs/bunny_part5.png"></a>
+            <a href="https://cal-cs184-student.github.io/project-webpages-sp23-vzliu/proj3-2/"><img src="https://cal-cs184-student.github.io/project-webpages-sp23-vzliu/proj3-2/pics/1/CBspheres_glass_final_d100_480_360.png"></a>
+            <a href="https://cal-cs184-student.github.io/proj-webpage-photoreceptor/proj4/index.html"><img src="https://naftoreiclag.bitbucket.io/cs184sp19_imgs/clothsim/screenshots/sphere_collide.png"></a>
+            <a href="https://annieln.github.io/npr-shaders/"><img src="gooch.png"></a>
+            <!-- <img src="delaunay.png"> -->
+            <!-- <img src="imagesegmentation.png"> -->
+        </div>
+    </div>
+    <div id="footer">
+        © 2023 annie lin <br> template made on earth by a human  <a href="https://imfunniee.github.io">imfunniee</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
