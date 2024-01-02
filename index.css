@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;1,200&display=swap');
-@font-face { font-family: TanAegean; src: url('./tan-aegean.ttf'); } 
+@font-face { font-family: TanAegean; src: url('assets/fonts/tan-aegean.ttf'); } 
 
 h1 {
     font-family: 'TanAegean', sans-serif;
@@ -208,7 +208,8 @@ header table {
     background-repeat:no-repeat;
 }
 #work {
-    width:92vw;
+    width:92vw !important;
+    padding-top: 20vh !important;
     padding:10vh 4vw;
     font-weight:bold;
 }
