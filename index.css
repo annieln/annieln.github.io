@@ -125,7 +125,7 @@ header table {
     text-align: left;
     display: none;
     position: absolute;
-    top: 30px;
+    top: 27px;
     background-color: #f1f1f1;
     /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -250,9 +250,9 @@ header table {
 }
 
 #main {
-    width:92vw !important;
+    width:85vw !important;
     padding-top: 20vh !important;
-    padding:5vh 4vw;
+    padding-left: 15vh;
     font-weight:bold;
 }
 #main h1 {
