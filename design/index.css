@@ -126,6 +126,25 @@ header table {
     border-bottom:2px solid #fff;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    
+}
+
+.responsive-iframe {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+border: none;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -165,7 +184,7 @@ header table {
     flex-direction:column;
     justify-content:center;
     text-align:left;
-    padding:0px 12%;
+    padding-left: 20vh;
     font-weight:bold;
 }
 
@@ -176,7 +195,7 @@ header table {
     justify-content:center;
     text-align:left;
     padding:0px 11%;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 #written a, a:visited {
@@ -184,30 +203,23 @@ header table {
 }
 
 #project_layout {
-    width:100%;
-    border:2vh solid #fff;
-}
-#project_layout tr td {
-    width:50%;
-    padding-bottom: 50px;
-}
-
-#project {
-    width:75% !important;
+    width:100% !important;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    text-align:left;
-    padding:0px 20%;
+    border:2vh solid #fff;
+    padding:0px 11%;
 }
 
-#project table {
-    width:70%;
+#project_layout tr td {
+    width:50%;
+    padding-bottom: 20px;
 }
 
-#project table tr td {
-    width:20% !important;
+#project {
+    width:100% !important;
     text-align:left;
+    padding:0px 8%;
 }
 
 #top_part {
@@ -315,7 +327,6 @@ header table {
     z-index:1;
     transition:0.4s ease-in-out;
 }
-
 #photos img {
     width:100%;
     height:auto;
@@ -437,16 +448,25 @@ button:focus {
 }
 
 @media (max-width: 1000px){
+    #project_layout {
+        padding: 0px 5%; /* Adjust padding for smaller screens */
+    }
+
+    #project_layout tr td {
+        display: block; /* Stack cells vertically */
+        width: 100%;
+    }
+
+    #project {
+        width: 100%;
+        padding: 0px;
+    }
     #photos {
     columns:1;
     column-gap:0%;
     }
     #photos img {
         margin:2% 0px;
-    }
-    #photos tr td {
-        display: block; /* Stack cells vertically */
-        width: 100%;
     }
     #photos img:hover {
         transform: scale(1);
