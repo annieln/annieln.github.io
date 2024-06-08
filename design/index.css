@@ -165,7 +165,7 @@ header table {
     flex-direction:column;
     justify-content:center;
     text-align:left;
-    padding-left: 20vh;
+    padding:0px 12%;
     font-weight:bold;
 }
 
@@ -315,6 +315,7 @@ header table {
     z-index:1;
     transition:0.4s ease-in-out;
 }
+
 #photos img {
     width:100%;
     height:auto;
@@ -442,6 +443,10 @@ button:focus {
     }
     #photos img {
         margin:2% 0px;
+    }
+    #photos tr td {
+        display: block; /* Stack cells vertically */
+        width: 100%;
     }
     #photos img:hover {
         transform: scale(1);
